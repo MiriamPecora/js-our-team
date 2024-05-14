@@ -40,17 +40,22 @@ for (let i = 0; i < team.length; i++) {
     // console.log(currentObj);
 
     const ul = document.getElementById("list");
+    let li = document.createElement("li");
+
+    // Sposto questo pezzo di codice in alto rispetto a prima per stampare le immagini prima del resto per scelta estetica
+    // Trasformo le stringhe delle foto in immagini effettive
+    let imageElement = document.createElement("img");
+    imageElement.src = "./img/" + currentObj.image;
+    // console.log(imageElement.src)
+    li.append(imageElement);
 
     // Stampo nome in pagina
-    let li = document.createElement("li");
     let h3 = document.createElement("h3");
-
     h3.append(currentObj.name);
     li.append(h3);
 
     // Stampo ruolo in pagina
     let p = document.createElement("p");
-
     p.append(currentObj.role);
     li.append(p);
 
@@ -59,12 +64,6 @@ for (let i = 0; i < team.length; i++) {
 
     // imageP.append(currentObj.image);
     // li.append(imageP);
-
-    // Trasformo le stringhe delle foto in immagini effettive
-    let imageElement = document.createElement("img");
-    imageElement.src = "./img/" + currentObj.image;
-    // console.log(imageElement.src)
-    li.append(imageElement);
 
     ul.append(li);
 }

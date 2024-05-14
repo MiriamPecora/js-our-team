@@ -20,4 +20,4 @@ Organizzare i singoli membri in card/schede -->
 BONUS 1:
     -Creare un elemento img e tramite .src inserire l'indirizzo dell'immagine e inserirlo nel DOM
 BONUS 2:
-    -
+    -Tramite CSS organizzare i singoli membri in delle card
