@@ -18,6 +18,6 @@ Organizzare i singoli membri in card/schede -->
 -Tramite console log, stampare le informazioni all'interno dell'array
 -Tramite un ciclo for, stampare in pagina sottoforma di stringa le varie informazioni
 BONUS 1:
-    -
+    -Creare un elemento img e tramite .src inserire l'indirizzo dell'immagine e inserirlo nel DOM
 BONUS 2:
     -

@@ -35,8 +35,6 @@ const team = [
 // Stampo in console l'array di oggetti
 // console.log(team);
 
-
-
 for (let i = 0; i < team.length; i++) {
     const currentObj = team[i];
     // console.log(currentObj);
@@ -57,10 +55,16 @@ for (let i = 0; i < team.length; i++) {
     li.append(p);
 
     // Stampo le stringhe delle foto
-    let imageP = document.createElement("p");
+    // let imageP = document.createElement("p");
 
-    imageP.append(currentObj.image);
-    li.append(imageP);
+    // imageP.append(currentObj.image);
+    // li.append(imageP);
+
+    // Trasformo le stringhe delle foto in immagini effettive
+    let imageElement = document.createElement("img");
+    imageElement.src = "./img/" + currentObj.image;
+    // console.log(imageElement.src)
+    li.append(imageElement);
 
     ul.append(li);
 }
